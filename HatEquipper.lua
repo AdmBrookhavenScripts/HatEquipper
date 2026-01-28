@@ -79,11 +79,11 @@ getgenv().ENABLEDRiG = true
     LMG2L["TextLabel_7"]["Size"] = UDim2.new(0, 100, 0, 26);
     LMG2L["TextLabel_7"]["Text"] = [[duping hats...]];
     LMG2L["TextLabel_7"]["Position"] = UDim2.new(0, 102, 0, 70);
-
+    task.wait(1)
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ResetCharacterAppearance"):FireServer()
-    task.wait(0.2)
+    task.wait(1)
     ClearHats()
-    
+    task.wait(1)
 	local Loop
 	Loop = RunService.RenderStepped:Connect(function()
 		local char = LocalPlayer.Character

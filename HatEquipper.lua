@@ -1,3 +1,4 @@
+if game.PlaceId == 4924922222 then
 local function ClearHats()
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -15,11 +16,11 @@ end
 end
 
 local function EquipComplexyRig(ids)
-getgenv().ENABLEDRiG = true
-local LastCFrame = nil
-if not getgenv().ENABLEDRiG then
-	return
+if getgenv().ENABLEDRiG then
+    return
 end
+
+getgenv().ENABLEDRiG = true
 
 	if typeof(ids) ~= "table" then
 		return
@@ -123,4 +124,7 @@ end
 if typeof(getgenv().Hats_IDS) == "table" then
     EquipComplexyRig(getgenv().Hats_IDS)
 else
+end
+else
+return
 end

@@ -100,7 +100,7 @@ getgenv().ENABLEDRiG = true
 		end
 	end)
 	
-	local waitTime = (#ids > 6) and 150 or 30
+	local waitTime = (#ids > 6) and 60 or 30
 
 task.wait(waitTime)
 LMG2L["TextLabel_7"].Text = "bypassing hat limit..."

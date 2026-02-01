@@ -100,10 +100,12 @@ getgenv().ENABLEDRiG = true
 		end
 	end)
 	
-	task.wait(30)
-	LMG2L["TextLabel_7"].Text = "bypassing hat limit..."
-	task.wait(30)
-	LMG2L["TextLabel_7"].Text = "finishing..."
+	local waitTime = (#ids > 6) and 150 or 30
+
+task.wait(waitTime)
+LMG2L["TextLabel_7"].Text = "bypassing hat limit..."
+task.wait(waitTime)
+LMG2L["TextLabel_7"].Text = "finishing..."
 	
 	Loop:Disconnect()
 	Loop = nil
